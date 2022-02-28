@@ -115,7 +115,7 @@ button.addEventListener("click", () => {
   click = true;
   setTimeout(() => {
     console.log("World!");
-    window.history.pushState("next", null, "/vite-project/portfolio.html");
+    window.history.pushState("next", null, "/portfolio.html");
     location.reload();
   }, 1000);
 });
