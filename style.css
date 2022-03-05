@@ -1,3 +1,9 @@
+body {
+  @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+  font-family: "VT323", monospace;
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -6,5 +12,13 @@ canvas {
 }
 
 h1 {
+  font-size: 5vw;
   color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

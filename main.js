@@ -55,8 +55,8 @@ camera.position.setY(3);
 
 const gltf_loader = new GLTFLoader();
 
-const earth_texture = new THREE.TextureLoader().load("earth_texture.jpg");
-const moon_texture = new THREE.TextureLoader().load("moon_texture.jpg");
+const earth_texture = new THREE.TextureLoader().load("./earth_texture.jpg");
+const moon_texture = new THREE.TextureLoader().load("./moon_texture.jpg");
 
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(2, 20, 20),
@@ -75,7 +75,7 @@ earth_obj.rotation.x = -40;
 moon.position.x = 6.7;
 
 var model;
-gltf_loader.load("froggy.gltf", (gltf) => {
+gltf_loader.load("./froggy.gltf", (gltf) => {
   model = gltf.scene;
   earth.add(model);
 
@@ -115,7 +115,7 @@ button.addEventListener("click", () => {
   click = true;
   setTimeout(() => {
     console.log("World!");
-    window.history.pushState("next", null, "/portfolio.html");
+    window.history.pushState("next", null, "./portfolio.html");
     location.reload();
   }, 1000);
 });
